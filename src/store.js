@@ -1,7 +1,10 @@
 import { reactive } from 'vue';
 
 export const store = reactive({
-    results: {},
+    results: [],
     //salvo url delll api per la chiamata
-    apiUrl: 'https://rickandmortyapi.com/api/character'
+    apiUrl: 'https://rickandmortyapi.com/api/character',
+    info: {}
 });
+
+// ES6 MODULES JavaScript

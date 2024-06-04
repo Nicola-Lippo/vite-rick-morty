@@ -20,7 +20,9 @@ export default {
     created() {
         console.log('chiamata api esercizio');
         axios.get(this.store.apiUrl).then((response) => {
-            this.store.results = response.data;
+            this.store.results = response.data.results;
+            this.store.info = response.data.info;
+            console.log(response.data);
         });
     },
 };
