@@ -1,14 +1,23 @@
 <script >
+import { store } from '../store';
 export default {
     name: 'CardName',
+    data() {
+        return {
+            store,
+        };
+    },
 };
 </script>
 
 <template>
-    <div class="contenuto">
-        <img src="" alt="">
-        <div>nome personaggio</div>
-        <div>classe personaggio</div>
+    <div class="col-25" v-for="card in store.results">
+        <div class="contenuto">
+            <img :src="card.image" :alt="index">
+            <div class="name">{{ card.name }}</div>
+            <div>{{ card.status }}</div>
+            <div>{{ card.species }}</div>
+        </div>
     </div>
 </template>
 
@@ -18,9 +27,5 @@ img {
     width: 200px;
     background-color: blue;
     border-radius: 50%;
-}
-
-.contenuto {
-    text-align: center;
 }
 </style>

@@ -14,9 +14,7 @@ export default {
 <template>
     <div class="container">
         <div class="row">
-            <div class="col-25">
-                <CardName />
-            </div>
+            <CardName />
         </div>
         <CardFound />
     </div>

@@ -12,7 +12,8 @@ export default {
 </script>
 
 <template>
-    <div v-if="store.info.count !== undefined">Found {{ store.info.count }} characters</div>
+    <div class="contenuto" v-if="store.info.count !== undefined"><strong>Found {{ store.info.count }} characters</strong>
+    </div>
 </template>
 
 <style></style>
