@@ -13,7 +13,7 @@ export default {
 <template>
     <div class="col-25" v-for="card in store.results">
         <div class="contenuto">
-            <img :src="card.image" :alt="index">
+            <img :src="card.image" :alt="foto">
             <div class="name">{{ card.name }}</div>
             <div>{{ card.status }}</div>
             <div>{{ card.species }}</div>
